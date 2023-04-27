@@ -53,19 +53,19 @@ function Sidebar() {
     );
 
   return (
-    <div>
+    <div className=" h-screen max-w-sm overflow-y-scroll scrollbar-hide">
       <div className="flex sticky top-0 bg-slate-100 z-10 justify-between items-center p-4 h-20 border-b-2 border-solid border-slate-200 ">
-        {/* <UserIcon
+        <UserIcon
           onClick={() => auth.signOut()}
           className="h-9 cursor-pointer hover:opacity-70"
-        /> */}
-        <Image
+        />
+        {/* <Image
           src={user.photoURL}
           alt=""
           height={45}
           width={45}
           className="rounded-full"
-        />
+        /> */}
         <div className="flex space-x-8  cursor-pointer transition-all duration-200 ">
           <ChatBubbleBottomCenterTextIcon
             onClick={createChat}
